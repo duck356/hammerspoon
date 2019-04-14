@@ -3,7 +3,7 @@ local menubar = hs.menubar.new()
 local menuData = {}
 
 local weaEmoji = {
-   lei = '⚡️',
+   lei = '⚡️雷',
    qing = '☀️晴',
    shachen = '😷沙尘暴',
    wu = '🌫雾',
