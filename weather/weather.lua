@@ -33,13 +33,12 @@ function getWeather()
       for k, v in pairs(rawjson.data) do
          if k == 1 then
             menubar:setTitle(v.tem)
-            -- titlestr = string.format("%s %s %s 当前🌡️%s， 最低🌡%s， 最高🌡️%s， 💧%s 💨%s 🌬 %s %s", city,weaEmoji[v.wea_img],v.day, v.tem, v.tem2, v.tem1, v.humidity, v.air, v.win_speed, v.wea)
-            titlestr = string.format("%s %s %s 当前🌡️%s， 最低🌡%s， 最高🌡️%s， 💧%s 💨%s 🌬 %s %s", city,weaEmoji[v.wea_img],v.day, v.tem, v.tem2, v.tem1, v.humidity, v.air, v.win_speed, v.wea)
+            titlestr = string.format("%s %s %s 当前🌡️%s， 最低🌡%s， 最高🌡️%s， 💧%s 💨%s 🐸👓 %s %s", city,weaEmoji[v.wea_img],v.day, v.tem, v.tem2, v.tem1, v.humidity, v.air, v.win_speed, v.wea)
             item = { title = titlestr }
             table.insert(menuData, item)
             table.insert(menuData, {title = '-'})
          else
-            titlestr = string.format("%s %s %s 最低🌡️%s， 最高🌡️%s， 🌬%s %s", city, weaEmoji[v.wea_img],v.day, v.tem2, v.tem1, v.win_speed, v.wea)
+            titlestr = string.format("%s %s %s 最低🌡️%s， 最高🌡️%s， 🐸👓%s %s", city, weaEmoji[v.wea_img],v.day, v.tem2, v.tem1, v.win_speed, v.wea)
             item = { title = titlestr }
             table.insert(menuData, item)
          end
