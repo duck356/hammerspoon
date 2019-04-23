@@ -1,3 +1,3 @@
 local hyper = {'ctrl', 'cmd'}
-
-hs.hotkey.bind({"cmd"}, "L", hs.caffeinate.systemSleep)
+-- cmd + L 锁屏
+hs.hotkey.bind({"cmd"}, "L", hs.caffeinate.startScreensaver)
