@@ -1,5 +1,6 @@
 ## hammerspoon个人使用插件汇总
 * Hammerspoon的天气插件，调用了www.tianqiapi.com的天气接口，菜单栏显示近日天气，包含未来一周的天气、气温与风向等
+- 修复了不会自动刷新的问题
 * cmd + L 锁屏
 ## 关于 hammerspoon 详见 https://github.com/Hammerspoon/hammerspoon
 
