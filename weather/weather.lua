@@ -1,7 +1,5 @@
+local urlApi = 'https://www.tianqiapi.com/api/?version=v1&appid=61372628&appsecret=7Yo6FT6Z'
 --local urlApi = 'https://www.tianqiapi.com/api/?version=v1'
-local urlApi = 'https://www.tianqiapi.com/api/?version=v1&&appid=[APPID]&appsecret=[secretKey]'
---请自行前往 https://tianqiapi.com/user/ 申请 appid 及 secretKey。
-
 local menubar = hs.menubar.new()
 local menuData = {}
 
@@ -20,7 +18,7 @@ local weaEmoji = {
 }
 
 function updateMenubar()
-	 menubar:setTooltip("Weather Info")
+	 menubar:setTooltip("天气预报")
     menubar:setMenu(menuData)
 end
 
